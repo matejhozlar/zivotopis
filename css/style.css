@@ -1,0 +1,9 @@
+.gradient-background {
+    background: linear-gradient(300deg, #504B38, #B9B28A);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+body {
+    background-color: #F8F3D9;
+}
