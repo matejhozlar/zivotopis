@@ -3,7 +3,7 @@
 ---
 
 ### 📖 About the Project
-This project is my personal portfolio that serves as a résumé and a presentation of my experience, education, and projects.
+This project the source code of my personal portfolio that serves as a résumé and a presentation of my experience, education, and projects.
 This website contains information about me, my studies, and the projects I have worked on.
 
 ### 🔧 Technologies Used
