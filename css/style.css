@@ -1,9 +1,39 @@
 .gradient-background {
-    background: linear-gradient(300deg, #504B38, #B9B28A);
+    background: linear-gradient(90deg, #2A2D43, #3A506B, #5BC0BE);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
   }
 
 body {
-    background-color: #F8F3D9;
+    background-color: white;
+}
+
+.content-box {
+    background: #F5F5F5;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08); 
+}
+
+.light-gray {
+    color: #F0F0F0;
+}
+
+.black {
+    background-color: #3A506B !important;
+    padding: 8px 16px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.getintouch {
+    text-align: center;
+}
+
+.nav-link.light-gray:hover {
+    color: #4A90E2;
+}
+
+.img-profile {
+    border-radius: 25%;
 }
