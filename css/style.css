@@ -14,7 +14,7 @@ body {
     padding: 0 !important; 
 }
 
-.nav-item:hover {
+.nav-item:hover:not(.dropdown-menu) {
     cursor: pointer;
     transition: all 0.1s;
     transform: translateY(-3px);
