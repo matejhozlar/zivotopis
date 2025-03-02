@@ -1,11 +1,17 @@
-.gradient-background {
-    background: linear-gradient(90deg, #2A2D43, #3A506B, #5BC0BE);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.navbar-background {
+    background-color: #000;
   }
 
 body {
-    background-color: white;
+    background-color: #000;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.navbar-line {
+    max-width: 100% !important; 
+    padding: 0 !important; 
 }
 
 .content-box {
@@ -15,25 +21,80 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08); 
 }
 
-.light-gray {
-    color: #F0F0F0;
-}
-
-.black {
-    background-color: #3A506B !important;
-    padding: 8px 16px;
-    width: 120px;
-    border-radius: 5px;
+.fontsized {
+    font-size: 14px;
 }
 
 .getintouch {
-    text-align: center;
+    background: #8A5CF6;
+    color: white;
+    border: none;
 }
+
+.cv {
+    background: black;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.border-bottom{
+    border-bottom-width: 3px !important;
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+}
+
 
 .nav-link.light-gray:hover {
     color: #4A90E2;
 }
 
+.main-color {
+    color: white !important;
+}
+
+.logo {
+    font-size: 18px;
+    border: 2px solid white;
+    padding: 5px 10px;
+    color: white;
+}
+
 .img-profile {
-    border-radius: 25%;
+    margin-top: 100px !important;
+}
+
+/* Language dropdown bar */
+.dropdown-menu {
+    background-color: #222 !important;
+    border: none !important;
+}
+
+.dropdown-item {
+    color: white !important;
+    background-color: #222 !important;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #444 !important;
+    color: #8A5CF6 !important;
+}
+
+.dropdown-menu.show {
+    background-color: #222 !important;
+}
+
+.navbar .dropdown-menu {
+    background-color: #222 !important;
 }
