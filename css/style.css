@@ -127,21 +127,6 @@ header .nav {
     animation: scanline 0.5s linear infinite, pixelate 0.2s infinite alternate, glitchColor 0.2s infinite alternate;
 }
 
-.dropdown-toggle:hover,
-.dropdown-toggle:focus,
-.dropdown-toggle:active {
-    animation: glitch 0.5s infinite;
-}
-
-.dropdown-menu {
-    position: absolute !important;
-    z-index: 1050 !important;
-    animation: none !important;
-    transform: none !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
 /* Glitchy appearance on Load */
 
 /* @keyframes pixelDissolve {
@@ -220,3 +205,47 @@ body::before {
     animation: glitch 0.2s infinite alternate, glitchColor 0.2s infinite alternate;
 }
 
+/* CRT Screen Blink */
+
+/* @keyframes crtBlink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+
+#crt-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+} */
+
+/* About.html */
+
+.olPadding {
+    padding-left: 80px;
+}
+
+.purple {
+    color: #8A5CF6;
+}
+
+/* Projects.html */
+
+#myCarousel {
+    height: 500px;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+#carousel {
+    min-height: 500px;
+}

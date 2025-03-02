@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matej Hozlár - Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+
+    <section id="title" class="navbar-background static">
+
+        <div class="container navbar-line">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-5 border-bottom">
+              <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                <span class="fs-4 logo glitch"> Matej Hozlár</span>
+              </a>
+              
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="./index.html" class="nav-link main-color" aria-current="page" data-translate="button-home">Home</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link main-color" data-translate="button-about">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link main-color" data-translate="button-projects">Projects</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle main-color" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-translate="navbar-language">🌍 Language
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                      <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')"><img src="./assets/svg/flags/gb.svg" width="20" height="15" alt="English"/> English</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="changeLanguage('sk')"><img src="./assets/svg/flags/sk.svg" width="20" height="15" alt="Slovak"/> Slovak</a></li>
+                      <li><a class="dropdown-item" href="#" onclick="changeLanguage('cz')"><img src="./assets/svg/flags/cz.svg" width="20" height="15" alt="Czech"/> Czech</a></li>
+                  </ul>
+              </li>
+              </ul>
+            </header>
+          </div>
+
+    </section>
+
+    <section id="carousel">
+
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="./assets/images/your-image.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <img src="./assets/images/your-image.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Another example headline.</h1>
+                    <p>Some representative placeholder content for the second slide of the carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/your-image.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="container">
+                  <div class="carousel-caption text-end">
+                    <h1>One more for good measure.</h1>
+                    <p>Some representative placeholder content for the third slide of this carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./scripts/translations.js"></script>
+    <script src="./scripts/glichy-appearance.js"></script>
+    <script src="./scripts/crtBlink.js"></script>
+</body>
+</html>

@@ -16,7 +16,7 @@ const translations = {
         'aboutpage-netdes' : "I was responsible for configuring and maintaining the company's IT networks.",
         'aboutpage-cryptodes' : 'I am working on Crypto researches, that are used on sites like altfins.com,',
         'aboutpage-edu' : 'Education',
-        'aboutpage-prg' : 'Prague',
+        'aboutpage-prg' : 'Prague (Paused)',
         'aboutpage-self' : 'Self-Taught Developer - Online Courses',
         'aboutpage-selfp' : 'Projects',
         'aboutpage-skills' : 'Skills',
@@ -25,7 +25,8 @@ const translations = {
         'aboutpage-beginner' : 'Beginner',
         'aboutpage-languages' : 'Languages',
         'aboutpage-en' : 'English - Upper-itermediate (B2)',
-        'aboutpage-czsk' : 'Slovak & Czech - Expert (C2)'
+        'aboutpage-czsk' : 'Slovak & Czech - Expert (C2)',
+        'aboutpage-present' : 'Present'
     },
 
     'sk': {
@@ -45,7 +46,7 @@ const translations = {
         'aboutpage-netdes' : "Bol som zodpovedný za konfiguráciu a údržbu IT sietí spoločnosti.",
         'aboutpage-cryptodes' : 'Pracujem na výskumoch v oblasti kryptomien, ktoré sa využívajú na weboch ako altfins.com,',
         'aboutpage-edu' : 'Vzdelanie',
-        'aboutpage-prg' : 'Praha',
+        'aboutpage-prg' : 'Praha (Pozastavené)',
         'aboutpage-self' : 'Samouk Vývojár - Online kurzy',
         'aboutpage-selfp' : 'Projekty',
         'aboutpage-skills' : 'Schopnosti',
@@ -54,7 +55,8 @@ const translations = {
         'aboutpage-beginner' : 'Začiatočník',
         'aboutpage-languages' : 'Jazyky',
         'aboutpage-en' : 'Angličtina - Stredne pokročilý (B2)',
-        'aboutpage-czsk' : 'Slovenčina a čeština - Expert (C2)'
+        'aboutpage-czsk' : 'Slovenčina a čeština - Expert (C2)',
+        'aboutpage-present' : 'Súčasnosť'
     },
 
     'cz': {
@@ -74,7 +76,7 @@ const translations = {
         'aboutpage-netdes' : "Byl jsem zodpovědný za konfiguraci a údržbu IT sítí společnosti.",
         'aboutpage-cryptodes' : 'Pracuji na výzkumech v oblasti kryptoměn, které se využívají na webech jako altfins.com,',
         'aboutpage-edu' : 'Vzdelání',
-        'aboutpage-prg' : 'Praha',
+        'aboutpage-prg' : 'Praha (Pozastavené)',
         'aboutpage-self' : 'Samouk vývojář - Online kurzy',
         'aboutpage-selfp' : 'Projekty',
         'aboutpage-skills' : 'Schopnosti',
@@ -83,7 +85,8 @@ const translations = {
         'aboutpage-beginner' : 'Začátečník',
         'aboutpage-languages' : 'Jazyky',
         'aboutpage-en' : 'Angličtina - Středně pokročilý (B2)',
-        'aboutpage-czsk' : 'Slovenština a čeština - Expert (C2)'
+        'aboutpage-czsk' : 'Slovenština a čeština - Expert (C2)',
+        'aboutpage-present' : 'Současnost'
     }
 
 }
