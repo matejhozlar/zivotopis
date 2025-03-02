@@ -14,6 +14,13 @@ body {
     padding: 0 !important; 
 }
 
+.nav-item:hover {
+    cursor: pointer;
+    transition: all 0.1s;
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 6px white;
+}
+
 .content-box {
     background: #F5F5F5;
     padding: 30px;
@@ -44,6 +51,8 @@ body {
     display: inline-block;
     font-weight: bold;
     border-radius: 5px;
+    height: 41px;
+    width: 208px;
 }
 
 .border-bottom{
@@ -71,10 +80,6 @@ header .nav {
     color: white;
 }
 
-.img-profile {
-    margin-top: 100px !important;
-}
-
 /* Language dropdown bar */
 .dropdown-menu {
     background-color: #222 !important;
@@ -97,4 +102,37 @@ header .nav {
 
 .navbar .dropdown-menu {
     background-color: #222 !important;
+}
+
+/* Glitch effect for Headings */
+
+@keyframes glitch {
+    0% { transform: skew(0dex); }
+    20% { transform: skew(-5dex); }
+    40% { transform: skew(5deg); }
+    60% { transform: skew(-3deg); }
+    80% { transform: skew(3deg); }
+    100% { transform: skew(0deg); }
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    animation: glitch 1.5s infinite linear alternate;
+}
+
+button, a {
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: white;
+    background: black;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+button:hover, a:hover {
+    box-shadow: 0 0 10px #fff, 0 0 20px #0ff;
+    border-color: #8A5CF6;
 }
