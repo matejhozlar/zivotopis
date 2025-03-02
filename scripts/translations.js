@@ -1,6 +1,5 @@
 const translations = {
     'en': {
-        'navbar-language' : '🌍 Language',
         'button-home' : 'Home',
         'button-about' : 'About',
         'button-projects' : 'Projects',
@@ -26,11 +25,17 @@ const translations = {
         'aboutpage-languages' : 'Languages',
         'aboutpage-en' : 'English - Upper-itermediate (B2)',
         'aboutpage-czsk' : 'Slovak & Czech - Expert (C2)',
-        'aboutpage-present' : 'Present'
+        'aboutpage-present' : 'Present',
+        /* simonGame */
+        'simon-rules' : 'Rules',
+        'simon-back' : 'Back',
+        'simon-poptitle' : 'Game Rules',
+        'simon-rule1' : '1. Watch the pattern carefully.',
+        'simon-rule2' : '2. Repeat the sequence in order.',
+        'simon-rule3' : '3. The game gets harder with each level!',
     },
 
     'sk': {
-        'navbar-language' : '🌍 Jazyk',
         'button-home' : 'Domov',
         'button-about' : 'O Mne',
         'button-projects' : 'Projekty',
@@ -56,11 +61,17 @@ const translations = {
         'aboutpage-languages' : 'Jazyky',
         'aboutpage-en' : 'Angličtina - Stredne pokročilý (B2)',
         'aboutpage-czsk' : 'Slovenčina a čeština - Expert (C2)',
-        'aboutpage-present' : 'Súčasnosť'
+        'aboutpage-present' : 'Súčasnosť',
+        /* simonGame */ 
+        'simon-rules' : 'Pravidlá',
+        'simon-back' : 'Späť',
+        'simon-poptitle' : 'Pravidlá Hry',
+        'simon-rule1' : '1. Pozorne sledujte vzor.',
+        'simon-rule2' : '2. Opakujte sekvenciu v správnom poradí.',
+        'simon-rule3' : '3. Hra sa s každou úrovňou stáva ťažšou!',
     },
 
     'cz': {
-        'navbar-language' : '🌍 Jazyk',
         'button-home' : 'Domov',
         'button-about' : 'O Mně',
         'button-projects' : 'Projekty',
@@ -86,7 +97,14 @@ const translations = {
         'aboutpage-languages' : 'Jazyky',
         'aboutpage-en' : 'Angličtina - Středně pokročilý (B2)',
         'aboutpage-czsk' : 'Slovenština a čeština - Expert (C2)',
-        'aboutpage-present' : 'Současnost'
+        'aboutpage-present' : 'Současnost',
+        /* simonGame */
+        'simon-rules' : 'Pravidla',
+        'simon-back' : 'Zpět',
+        'simon-poptitle' : 'Pravidla Hry',
+        'simon-rule1' : '1. Pečlivě sledujte vzor.',
+        'simon-rule2' : '2. Opakujte sekvenci ve správném pořadí.',
+        'simon-rule3' : '3. Hra se s každou úrovní stává těžší!',
     }
 
 }

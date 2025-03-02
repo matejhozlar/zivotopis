@@ -86,11 +86,11 @@ body {
   font-weight: bold;
   border-radius: 5px;
   height: 20px;
-  width: 76px;
+  width: 100px;
 }
 
 .btn-rules {
-  left: 130px;
+  left: 160px;
 }
 
 .popup {
