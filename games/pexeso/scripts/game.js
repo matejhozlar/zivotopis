@@ -8,6 +8,24 @@ let timer;
 function setDifficulty(level) {
     difficulty = level;
     document.getElementById("selectedDifficulty").textContent = "Difficulty: " + level;
+
+    let description = "";
+    switch (level) {
+        case "Easy":
+            description = "Relaxed pace, no timer.";
+            break;
+        case "Medium":
+            description = "Balanced challenge with a timer.";
+            break;
+        case "Hard":
+            description = "Cards shuffle every 20s. Stay sharp!";
+            break;
+        case "Insane":
+            description = "Cards shuffle every 10s, timer & instant flip back!";
+            break;
+    }
+
+    document.getElementById("difficultyDescription").textContent = description;
 }
 
 function startGame(size) {
