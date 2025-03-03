@@ -113,7 +113,8 @@ function startTimer() {
 
 function showGameOver() {
     document.body.classList.add("flash-red");
-    
+    var wrong = new Audio("./assets/music/wrong.mp3");
+    wrong.play();
     setTimeout(() => {
         document.body.classList.remove("flash-red"); 
         document.getElementById("gameScreen").classList.add("hidden");
