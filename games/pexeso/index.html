@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pexeso Game</title>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+</head>
+<body>
+
+    <div id="introScreen">
+        <h1>Pexeso Game</h1>
+        <button class="button" onclick="showBoardSelection()">Start Game</button>
+        <button class="button" onclick="exitGame()">Exit</button>
+    </div>
+    
+    <div id="boardSelectionScreen" class="hidden">
+        <h2>Select Difficulty</h2>
+        <button class="button" onclick="setDifficulty('Easy')">Easy</button>
+        <button class="button" onclick="setDifficulty('Medium')">Medium</button>
+        <button class="button" onclick="setDifficulty('Hard')">Hard</button>
+        <button class="button" onclick="setDifficulty('Insane')">Insane</button>
+        <p id="selectedDifficulty">Difficulty: None</p>
+        <h2>Select Board Size</h2>
+        <button class="button" onclick="startGame(2)">2x2</button>
+        <button class="button" onclick="startGame(4)">4x4</button>
+        <button class="button" onclick="startGame(6)">6x6</button>
+        <button class="button" onclick="startGame(8)">8x8</button>
+    </div>
+    
+    <div id="gameScreen" class="hidden">
+        <h1>Pexeso Game</h1>
+        <div id="difficultyDisplay">Mode: <span id="difficultyText"></span></div>
+        <p id="timerDisplay" class="hidden">Time Left: <span id="timeLeft"></span></p>
+        <div class="game-container" id="game"></div>
+    </div>
+    
+    <div id="endScreen" class="hidden">
+        <p id="message"></p>
+        <button class="button" onclick="showBoardSelection()">Restart</button>
+        <button class="button" onclick="exitGame()">Exit</button>
+    </div>
+    
+
+    <audio id="backgroundMusic" src="./assets/music/music.mp3" autoplay loop>
+        Your browser does not support the audio element.
+    </audio>
+
+    
+    <button id="musicToggle" class="music-button" onclick="toggleMusic()">
+        <span id="musicIcon">🔊</span>
+    </button>
+    
+    
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/music.js"></script>
+</body>
+</html>
