@@ -4,6 +4,8 @@ let matchedPairs = 0;
 let difficulty = "Medium";
 let timeLeft = 0;
 let timer; 
+let shuffleInterval;
+let isChecking = false;
 
 function setDifficulty(level) {
     difficulty = level;
@@ -46,15 +48,13 @@ function startGame(size) {
         startTimer();
     }
     
+    clearInterval(shuffleInterval); 
+
     if (difficulty === "Hard" || difficulty === "Insane") {
-        setInterval(shuffleBoard, difficulty === "Hard" ? 20000 : 10000);
+        shuffleInterval = setInterval(shuffleBoard, difficulty === "Hard" ? 20000 : 10000);
     }
 
-    if (difficulty === "Insane") {
-        flipBackInstantly = true;
-    } else {
-        flipBackInstantly = false;
-    }
+    flipBackInstantly = difficulty === "Insane";
 }
 
 function shuffleBoard() {
@@ -168,13 +168,20 @@ function shuffle(array) {
 }
 
 function flipCard(card) {
-    if (selectedCards.length < 2 && !card.classList.contains("flipped")) {
-        card.classList.add("flipped");
-        selectedCards.push(card);
+    if (isChecking || selectedCards.length >= 2 || card.classList.contains("flipped")) {
+        return; 
+    }
 
-        if (selectedCards.length === 2) {
+    card.classList.add("flipped");
+    selectedCards.push(card);
+
+    if (selectedCards.length === 2) {
+        isChecking = true; 
+
+        setTimeout(() => {
             checkMatch();
-        }
+            isChecking = false; 
+        }, 1000);
     }
 }
 
