@@ -2,9 +2,9 @@ let currentPlayer = 'X';
 let board = [];
 let gameActive = true;
 let vsAI = false;
-let aiDifficulty = 'easy'; // Default difficulty
-let gridSize = 3; // Default grid size
-let winCondition = 3; // Default win condition
+let aiDifficulty = 'easy'; 
+let gridSize = 3; 
+let winCondition = 3; 
 
 function showDifficultySelection() {
     document.getElementById("introScreen").classList.add("hidden");
@@ -42,6 +42,18 @@ function applyCustomRules() {
     document.getElementById("introScreen").classList.remove("hidden"); 
 }
 
+function disableGameScreen() {
+    document.querySelectorAll(".cell").forEach(cell => {
+        cell.style.pointerEvents = "none"; 
+    });
+}
+
+function enableGameScreen() {
+    document.querySelectorAll(".cell").forEach(cell => {
+        cell.style.pointerEvents = "auto"; 
+    });
+}
+
 function startGame(aiMode) {
     vsAI = aiMode;
     if (aiMode) {
@@ -55,28 +67,26 @@ function startGame(aiMode) {
 }
 
 function handleCellClick(event) {
-    if (!gameActive) return; 
+    if (!gameActive || board[event.target.dataset.index] !== '') return; 
 
     const index = event.target.dataset.index;
+    board[index] = currentPlayer;
+    event.target.textContent = currentPlayer;
+    event.target.classList.add("taken", "placed");
 
-    if (board[index] === '') {
-        board[index] = currentPlayer;
-        event.target.textContent = currentPlayer;
-        event.target.classList.add("taken", "placed");
+    event.target.addEventListener("animationend", () => {
+        event.target.classList.remove("placed");
+    }, { once: true });
 
-        event.target.addEventListener("animationend", () => {
-            event.target.classList.remove("placed");
-        }, { once: true });
+    checkWinner();
 
-        checkWinner();
+    if (gameActive) {
+        currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        document.getElementById("turnIndicator").textContent = `Player ${currentPlayer}'s Turn`;
 
-        if (gameActive) {
-            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-            document.getElementById("turnIndicator").textContent = `Player ${currentPlayer}'s Turn`;
-
-            if (vsAI && currentPlayer === 'O') {
-                setTimeout(aiMove, 500);
-            }
+        if (vsAI && currentPlayer === 'O') {
+            disableGameScreen();
+            setTimeout(aiMove, 500);
         }
     }
 }
@@ -149,7 +159,7 @@ function checkWinnerForMinimax() {
 }
 
 function aiMove() {
-    disableBoard(); 
+    disableGameScreen(); 
 
     let move;
     switch (aiDifficulty) {
@@ -176,7 +186,7 @@ function aiMove() {
         document.getElementById("turnIndicator").textContent = `Player X's Turn`;
     }
 
-    enableBoard(); 
+    enableGameScreen(); 
 }
 
 function getRandomMove() {
@@ -335,7 +345,7 @@ function checkImmediateWin(player) {
 
 function generateWinPatterns(size, condition) {
     const patterns = [];
-    // Horizontal patterns
+
     for (let i = 0; i < size; i++) {
         for (let j = 0; j <= size - condition; j++) {
             const pattern = [];
@@ -345,7 +355,7 @@ function generateWinPatterns(size, condition) {
             patterns.push(pattern);
         }
     }
-    // Vertical patterns
+
     for (let i = 0; i <= size - condition; i++) {
         for (let j = 0; j < size; j++) {
             const pattern = [];
@@ -355,7 +365,7 @@ function generateWinPatterns(size, condition) {
             patterns.push(pattern);
         }
     }
-    // Diagonal patterns (top-left to bottom-right)
+
     for (let i = 0; i <= size - condition; i++) {
         for (let j = 0; j <= size - condition; j++) {
             const pattern = [];
@@ -365,7 +375,7 @@ function generateWinPatterns(size, condition) {
             patterns.push(pattern);
         }
     }
-    // Diagonal patterns (bottom-left to top-right)
+
     for (let i = condition - 1; i < size; i++) {
         for (let j = 0; j <= size - condition; j++) {
             const pattern = [];
@@ -378,12 +388,25 @@ function generateWinPatterns(size, condition) {
     return patterns;
 }
 
+function disableButtons() {
+    document.querySelectorAll("button").forEach(button => {
+        button.disabled = true;
+    });
+}
+
+function enableButtons() {
+    document.querySelectorAll("button").forEach(button => {
+        button.disabled = false;
+    });
+}
+
 function checkWinner() {
     const winPatterns = generateWinPatterns(gridSize, winCondition);
 
     for (let pattern of winPatterns) {
         if (pattern.every(index => board[index] === currentPlayer)) {
             gameActive = false;
+            disableButtons(); 
 
             pattern.forEach(index => {
                 document.querySelector(`[data-index='${index}']`).classList.add("winner");
@@ -398,6 +421,8 @@ function checkWinner() {
                 document.getElementById("winScreen").classList.remove("hidden");
                 document.getElementById("winMessage").textContent = `Player ${currentPlayer} Wins!`;
                 document.getElementById("winMessage").classList.add("show-message");
+
+                enableButtons(); 
             }, 2000);
 
             return;
@@ -406,11 +431,14 @@ function checkWinner() {
 
     if (!board.includes('')) {
         gameActive = false;
+        disableButtons(); 
 
         setTimeout(() => {
             document.getElementById("gameScreen").classList.add("hidden");
             document.getElementById("winScreen").classList.remove("hidden");
             document.getElementById("winMessage").textContent = "It's a Draw!";
+            
+            enableButtons(); 
         }, 2000);
     }
 }
