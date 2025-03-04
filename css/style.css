@@ -70,6 +70,9 @@ header .nav {
     align-items: center;
 }
 
+.no-bullets {
+    list-style-type: none;
+}
 
 .nav-link.light-gray:hover {
     color: #4A90E2;
@@ -241,6 +244,11 @@ body::before {
     color: #8A5CF6;
 }
 
+.purple:hover {
+    text-decoration: underline;
+    color: #ff4d4d; 
+}
+
 /* Projects.html */
 
 #myCarousel {
@@ -312,6 +320,19 @@ body::before {
     overflow: hidden;
     width: 0;
     animation: typing 2s steps(20, end) forwards, blink 0.8s step-end infinite alternate;
+}
+
+/* Smooth fade-in Animation for about.html */
+
+.fade-in-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
