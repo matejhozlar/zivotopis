@@ -33,7 +33,15 @@ const translations = {
         'simon-rule2' : '2. Repeat the sequence in order.',
         'simon-rule3' : '3. The game gets harder with each level!',
         /* Projects.html */
-        'projects-simonh1' : '"Simon" electronic memory game' 
+        'projects-simonh1' : '"Simon" electronic memory game',
+        'projects-simonp' : 'Test your memory!',
+        'projects-pexesop': 'Pexeso game with multiple difficulties. Do you think you can take on insane? NO!!',
+        'projects-tictactoep': 'Challenge your friends or AI!',
+        'carousel-prev': 'Previous',
+        'carousel-next': 'Next',
+        'projects-simonbtn' : 'Try it out',
+        'projects-pexesobtn' : 'Play!',
+        'projects-tictactoebtn' : 'Challange!'
     },
 
     'sk': {
@@ -70,7 +78,15 @@ const translations = {
         'simon-rule2' : '2. Opakujte sekvenciu v správnom poradí.',
         'simon-rule3' : '3. Hra sa s každou úrovňou stáva ťažšou!',
         /* Projects.html */
-        'projects-simonh1' : '"Simon" elektronická pamäťová hra'
+        'projects-simonh1' : '"Simon" elektronická pamäťová hra',
+        'projects-simonp' : 'Otestujte svoju pamäť!',
+        'projects-pexesop': 'Pexeso hra s viacerými obtiažnosťami. Myslíte si, že zvládnete insane? NIE!!',
+        'projects-tictactoep': 'Vyzvite svojich priateľov alebo AI!',
+        'carousel-prev': 'Predchádzajúci',
+        'carousel-next': 'Ďalší',
+        'projects-simonbtn' : 'Skúsiť',
+        'projects-pexesobtn' : 'Hrať!',
+        'projects-tictactoebtn' : 'Výzva!'
     },
 
     'cz': {
@@ -107,7 +123,15 @@ const translations = {
         'simon-rule2' : '2. Opakujte sekvenci ve správném pořadí.',
         'simon-rule3' : '3. Hra se s každou úrovní stává těžší!',
         /* Projects.html */
-        'projects-simonh1' : '"Simon" elektronická paměťová hra'
+        'projects-simonh1' : '"Simon" elektronická paměťová hra',
+        'projects-simonp' : 'Otestujte svou paměť!',
+        'projects-pexesop': 'Pexeso hra s více obtížnostmi. Myslíte si, že zvládnete insane? NE!!',
+        'projects-tictactoep': 'Vyzvěte své přátele nebo AI!',
+        'carousel-prev': 'Předchozí',
+        'carousel-next': 'Další',
+        'projects-simonbtn' : 'Zkusit',
+        'projects-pexesobtn' : 'Hrát!',
+        'projects-tictactoebtn' : 'Výzva!'
     }
 
 }
@@ -118,16 +142,25 @@ function changeLanguage(lang) {
 }
 
 function applyTranslations(lang) {
-    if(!translations[lang]) return;
+    if (!translations[lang]) return;
 
     document.querySelectorAll("[data-translate]").forEach(el => {
         let key = el.getAttribute("data-translate");
-        el.textContent = translations[lang][key];
+        if (translations[lang][key]) {
+            el.textContent = translations[lang][key];
+        }
     });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     let savedLanguage = localStorage.getItem("selectedLanguage") || "en";
     applyTranslations(savedLanguage);
+
+    const carousel = document.getElementById('myCarousel');
+    if (carousel) {
+        carousel.addEventListener('slid.bs.carousel', () => {
+            applyTranslations(savedLanguage);
+        });
+    }
 });
 
