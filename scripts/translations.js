@@ -28,7 +28,6 @@ const translations = {
         'aboutpage-present' : 'Present',
         /* simonGame */
         'simon-rules' : 'Rules',
-        'simon-back' : 'Back',
         'simon-poptitle' : 'Game Rules',
         'simon-rule1' : '1. Watch the pattern carefully.',
         'simon-rule2' : '2. Repeat the sequence in order.',
@@ -64,7 +63,6 @@ const translations = {
         'aboutpage-present' : 'Súčasnosť',
         /* simonGame */ 
         'simon-rules' : 'Pravidlá',
-        'simon-back' : 'Späť',
         'simon-poptitle' : 'Pravidlá Hry',
         'simon-rule1' : '1. Pozorne sledujte vzor.',
         'simon-rule2' : '2. Opakujte sekvenciu v správnom poradí.',
@@ -100,7 +98,6 @@ const translations = {
         'aboutpage-present' : 'Současnost',
         /* simonGame */
         'simon-rules' : 'Pravidla',
-        'simon-back' : 'Zpět',
         'simon-poptitle' : 'Pravidla Hry',
         'simon-rule1' : '1. Pečlivě sledujte vzor.',
         'simon-rule2' : '2. Opakujte sekvenci ve správném pořadí.',

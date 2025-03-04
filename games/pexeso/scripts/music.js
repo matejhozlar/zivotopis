@@ -5,12 +5,11 @@ const musicIcon = document.getElementById("musicIcon");
 music.muted = false;
 
 window.addEventListener("DOMContentLoaded", () => {
-    // Try to autoplay
     playMusic();
 });
 
 function playMusic() {
-    music.volume = 0.5; // Set initial volume
+    music.volume = 0.5; 
     music.play().then(() => {
         isPlaying = true;
         musicIcon.textContent = "🔊"; 

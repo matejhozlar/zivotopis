@@ -255,6 +255,8 @@
             color: black;
         }
 
+        /* Flash Wrong */
+
         @keyframes flashRed {
             0% { background-color: #000; }
             25% { background-color: red; }
@@ -265,6 +267,20 @@
         
         .flash-red {
             animation: flashRed 0.8s ease-in-out;
+        }
+
+        /* Flash Success */
+
+        @keyframes flashGreen {
+            0% { background-color: #000; }
+            25% { background-color: green; }
+            50% { background-color: #000; }
+            75% { background-color: green; }
+            100% { background-color: #000; }
+        }
+
+        .flash-green {
+            animation: flashGreen 0.8s ease-in-out;
         }
 
         /* gameShuffling */
@@ -294,6 +310,58 @@
 
         .game-container.shuffled {
             animation: fadeIn 0.5s ease-in-out;
+        }
+
+        /* Loading Screen Animation */
+
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+            font-family: 'Press Start 2P', cursive;
+            animation: glitch 1s infinite alternate;
+            z-index: 9999;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .loading-screen.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .loading-text {
+            text-shadow: 
+                -2px 0 red, 
+                2px 0 cyan, 
+                0 -2px yellow, 
+                0 2px blue;
+            animation: glitchLoad 1s infinite alternate;
+        }
+        
+        @keyframes glitchLoad {
+            0% {
+                transform: translate(0);
+            }
+            25% {
+                transform: translate(2px, -2px);
+            }
+            50% {
+                transform: translate(-2px, 2px);
+            }
+            75% {
+                transform: translate(2px, 2px);
+            }
+            100% {
+                transform: translate(0);
+            }
         }
         
         

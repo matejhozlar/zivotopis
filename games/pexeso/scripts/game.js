@@ -215,12 +215,24 @@ function checkMatch() {
     selectedCards = [];
 }
 
+function goToMenu() {
+    document.getElementById("endScreen").classList.add("hidden");
+    document.getElementById("introScreen").classList.remove("hidden");
+}
+
 
 function showEndMessage() {
-    document.getElementById("gameScreen").classList.add("hidden");
-    document.getElementById("endScreen").classList.remove("hidden");
-    document.getElementById("message").innerHTML = "Congratulations! You won!";
-    document.getElementById("message").classList.add("show-message");
+    document.body.classList.add("flash-green");
+    var success = new Audio("./assets/music/success.mp3");
+    success.play();
+
+    setTimeout(() => {
+        document.body.classList.remove("flash-green");
+        document.getElementById("gameScreen").classList.add("hidden");
+        document.getElementById("endScreen").classList.remove("hidden");
+        document.getElementById("message").innerHTML = "Congratulations! You won!";
+        document.getElementById("message").classList.add("show-message");
+    }, 800);
 }
 
 function showBoardSelection() {

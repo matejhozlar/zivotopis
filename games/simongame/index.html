@@ -10,11 +10,15 @@
 
 <body>
 
+  <div id="loadingScreen" class="loading-screen">
+    <div class="loading-text">LOADING...</div>
+</div>
+
   <div class="button-container">
 
     <a class="btn-back white" href="../../projects.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
       <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-    </svg> <span data-translate="simon-back">Back</span></a>
+    </svg> <span>Exit</span></a>
 
     <a class="btn-back white btn-rules" href="#" data-translate="simon-rules">Rules</a>
 
@@ -66,6 +70,7 @@
   <script src="./rules.js" charset="utf-8"></script>
   <script src="../../scripts/glichy-appearance.js"></script>
   <script src="../../scripts/translations.js"></script>
+  <script src="./load-animation.js"></script>
 </body>
 
 </html>

@@ -55,6 +55,12 @@ body {
     width: 208px;
 }
 
+.button-purple {
+    background: #8A5CF6;
+    color: white;
+    border: none;
+}
+
 .border-bottom{
     border-bottom-width: 3px !important;
 }
