@@ -32,6 +32,8 @@ const translations = {
         'simon-rule1' : '1. Watch the pattern carefully.',
         'simon-rule2' : '2. Repeat the sequence in order.',
         'simon-rule3' : '3. The game gets harder with each level!',
+        /* Projects.html */
+        'projects-simonh1' : '"Simon" electronic memory game' 
     },
 
     'sk': {
@@ -67,6 +69,8 @@ const translations = {
         'simon-rule1' : '1. Pozorne sledujte vzor.',
         'simon-rule2' : '2. Opakujte sekvenciu v správnom poradí.',
         'simon-rule3' : '3. Hra sa s každou úrovňou stáva ťažšou!',
+        /* Projects.html */
+        'projects-simonh1' : '"Simon" elektronická pamäťová hra'
     },
 
     'cz': {
@@ -102,6 +106,8 @@ const translations = {
         'simon-rule1' : '1. Pečlivě sledujte vzor.',
         'simon-rule2' : '2. Opakujte sekvenci ve správném pořadí.',
         'simon-rule3' : '3. Hra se s každou úrovní stává těžší!',
+        /* Projects.html */
+        'projects-simonh1' : '"Simon" elektronická paměťová hra'
     }
 
 }
@@ -124,3 +130,4 @@ document.addEventListener("DOMContentLoaded", () => {
     let savedLanguage = localStorage.getItem("selectedLanguage") || "en";
     applyTranslations(savedLanguage);
 });
+
