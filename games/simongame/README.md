@@ -31,7 +31,7 @@ Simon is a simple yet addictive memory game. This version uses **HTML, CSS, and 
 5. **Game Over**:
    - If you click the wrong button, the screen flashes red and the sequence resets. Press any key to start over.
   
-## Porject Structure
+## Project Structure
 ```cpp
      simon/
 │
