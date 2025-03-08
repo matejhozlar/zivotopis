@@ -15,7 +15,6 @@ You can view my resume live at: **TBD**
 - **GSAP**: Animations and Effects
 
 ## Table of Contents
-- [Installation & Usage](#-installation--usage)
 
 ## 🎨 Features
 - **Responsive design**: Fully optimized for different screen sizes.
@@ -27,9 +26,10 @@ You can view my resume live at: **TBD**
 ## 🚀 Installation & Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/matejhozlar/resume.git
    ```
 2. Open ```index.html``` in your browser.
+  
 
 ## 📧 Contact
 - **Email:** hozlarmatej0@gmail.com
