@@ -25,6 +25,18 @@ Tic Tac Toe – Ultimate Customizable Challenge takes the well-known game to a n
 - **Responsive Design & Music**:
   - **Background Music**: A looping retro track with a toggle option for an immersive atmosphere.
   - **Mobile Friendly**: Responsive layout adapts to different screen sizes.
+
+## Installation & Setup
+1. **Clone or Downoload the Repository**:
+```bash
+git clone https://github.com/matejhozlar/resume.git
+```
+2. **Open the Project**:
+   - Navigate to the project folder ```games/tic-tac-toe/```
+   - Open ```index.html``` in your preffered web browser.
+3. **Play the Game**:
+   - No additional dependencies or servers are needed.
+   - Enjoy customizing and playing!
  
 ## How to Play
 1. **Launch the Game**:
