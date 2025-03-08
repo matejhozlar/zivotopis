@@ -336,3 +336,128 @@ body::before {
 }
 
 
+/* projects.html */
+
+/***********************************************/
+/* REVAMPED TERMINAL STYLE PROJECT LIST        */
+/***********************************************/
+
+/* Title: keep your existing style, or tweak as desired */
+.terminal-header {
+    font-family: monospace;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* Container for all project items */
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Optional: a subtle background or pattern */
+    background: rgba(255,255,255,0.02);
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+  }
+  
+  /* Each project item - new animations & hover effects */
+  .project-item {
+    position: relative;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid #8A5CF6; /* Neon purple border */
+    border-radius: 8px;
+    padding: 20px;
+    color: #e0e0e0;
+    
+    /* Smooth fade-in on load (optional) */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards ease;
+  }
+  
+  /* Stagger the animations for each item (optional) */
+  .project-item:nth-child(1) { animation-delay: 0.2s; }
+  .project-item:nth-child(2) { animation-delay: 0.4s; }
+  .project-item:nth-child(3) { animation-delay: 0.6s; }
+  
+  /* Hover effect: a subtle neon glow */
+  .project-item:hover {
+    box-shadow: 0 0 10px #8A5CF6, 0 0 20px #8A5CF6;
+    transform: translateY(-5px);
+  }
+  
+  /* Project labels (e.g., "Project:", "Description:", etc.) */
+  .project-label {
+    font-weight: bold;
+    color: #8A5CF6;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  /* Title with a slight glitch/flicker effect */
+  .project-title {
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
+    position: relative;
+  }
+  
+  /* Description */
+  .project-description {
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #ccc;
+  }
+  
+  /* GitHub link */
+  .project-link {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  
+  .project-link a {
+    font-size: 14px;
+    color: #8A5CF6;
+    text-decoration: none;
+    border-bottom: 1px dotted #8A5CF6;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+  }
+  
+  .project-link a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #8A5CF6;
+  }
+  
+  /***********************************************/
+  /* KEYFRAMES FOR ANIMATIONS                    */
+  /***********************************************/
+  
+  /* Fade-in and move up from below */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  
+
+
+
+
+
+  
+
+  
+ 
