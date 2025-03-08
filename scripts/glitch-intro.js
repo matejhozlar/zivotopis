@@ -22,9 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
     
     function revealContent() {
         mainContent.classList.remove("hidden");
-        gsap.fromTo(mainContent, { opacity: 0 }, { opacity: 1, duration: 1 });
+        if (!sessionStorage.getItem("contentRevealedOnce")) {
+            gsap.fromTo(mainContent, { opacity: 0 }, { opacity: 1, duration: 1 });
+            sessionStorage.setItem("contentRevealedOnce", "true");
+        } else {
+            mainContent.style.opacity = 1;
+        }
         
         gsap.from(navLinks, { opacity: 0, y: -20, stagger: 0.1, duration: 0.5 });
         gsap.from(textBlocks, { opacity: 0, y: 30, scale: 0.95, stagger: 0.2, duration: 0.7, ease: "power2.out" });
     }
+    
 });

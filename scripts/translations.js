@@ -41,7 +41,25 @@ const translations = {
         'carousel-next': 'Next',
         'projects-simonbtn' : 'Try it out',
         'projects-pexesobtn' : 'Play!',
-        'projects-tictactoebtn' : 'Challange!'
+        'projects-tictactoebtn' : 'Challange!',
+        'projects-projectindex' : 'Project Index',
+        'projects-websites' : 'Websites',
+        'projects-jsgames' : 'JS Games',
+        'projects-webapps' : 'Web Apps',
+        'projects-cprojects' : 'C Projects',
+        'projects-project' : 'Project:',
+        'projects-currentwebsite' : 'Current Website',
+        'projects-desc' : 'Description:',
+        'projects-currWebDes' : 'Explore the source code behind this website. Built with HTML, CSS, and retro-inspired design, it serves as a resume for me & my projects!',
+        'projects-viewOnGit' : 'View on GitHub',
+        'projects-tbdTitle' : 'More Projects Coming Soon',
+        'projects-tbdDes' : `I'm constantly working on new projects and updates. Stay tuned for more innovative and exciting work!`,
+        'projects-simonProjectsTitle' : '"Simon" electronic game',
+        'projects-simonProjectsDes' : 'Step back in time and test your recall with this retro-inspired memory game! The game flashes a sequence of colored buttons—each accompanied by a catchy sound.',
+        'projects-play' : 'Play',
+        'projects-tictactoedes' : 'Step into a reimagined classic where Tic Tac Toe meets modern strategy! This isn’t your typical 3×3 grid game—here, you can customize the board size and win conditions.',
+        'projects-googlescraperdes' : 'This project is a simple web application that allows users to search for a keyword and fetch results from an external API.',
+        'projects-pexesodes' : 'Step into a high-stakes, retro-inspired card matching challenge that tests your memory and reflexes!'
     },
 
     'sk': {
@@ -86,7 +104,25 @@ const translations = {
         'carousel-next': 'Ďalší',
         'projects-simonbtn' : 'Skúsiť',
         'projects-pexesobtn' : 'Hrať!',
-        'projects-tictactoebtn' : 'Výzva!'
+        'projects-tictactoebtn' : 'Výzva!',
+        'projects-projectindex' : 'Index Projektov',
+        'projects-websites' : 'Webové Stránky',
+        'projects-jsgames' : 'JS Hry',
+        'projects-webapps' : 'Webové Aplikácie',
+        'projects-cprojects' : 'C Projekty',
+        'projects-desc' : 'Popis:',
+        'projects-project' : 'Projekt:',
+        'projects-currentwebsite' : 'Stránka, na ktorej sa aktuálne nachádzate',
+        'projects-currWebDes' : 'Preskúmajte zdrojový kód tejto webovej stránky. Postavený pomocou HTML, CSS a dizajnu inšpirovaného retrom, slúži ako životopis pre mňa a moje projekty!',
+        'projects-viewOnGit' : 'Zobraziť GitHub',
+        'projects-tbdTitle' : 'Ďalšie projekty už čoskoro',
+        'projects-tbdDes' : 'Neustále pracujem na nových projektoch a aktualizáciách. Zostaňte naladení na ďalšiu inovatívnu a vzrušujúcu prácu!',
+        'projects-simonProjectsTitle' : '"Simon" elektronická hra',
+        'projects-simonProjectsDes' : 'Vráťte sa späť v čase a otestujte si svoju pamäť s týmto retro-inšpirovaným pexesom! V hre bliká sled farebných tlačidiel – každé je sprevádzané chytľavým zvukom.',
+        'projects-play' : 'Hrať',
+        'projects-tictactoedes' : 'Vstúpte do prepracovanej klasiky, kde sa Tic Tac Toe stretáva s modernou stratégiou! Toto nie je vaša typická mriežková hra 3×3 – tu si môžete prispôsobiť veľkosť hracej dosky a podmienky výhry.',
+        'projects-googlescraperdes' : 'Tento projekt je jednoduchá webová aplikácia, ktorá umožňuje používateľom vyhľadávať kľúčové slovo a získavať výsledky z externého API.',
+        'projects-pexesodes' : 'Vstúpte do vysoko stávkovej výzvy na porovnávanie kariet inšpirovanej retrom, ktorá otestuje vašu pamäť a reflexy!'
     },
 
     'cz': {
@@ -131,7 +167,25 @@ const translations = {
         'carousel-next': 'Další',
         'projects-simonbtn' : 'Zkusit',
         'projects-pexesobtn' : 'Hrát!',
-        'projects-tictactoebtn' : 'Výzva!'
+        'projects-tictactoebtn' : 'Výzva!',
+        'projects-projectindex' : 'Index Projektů',
+        'projects-websites' : 'Webové Stránky',
+        'projects-jsgames' : 'JS Hry',
+        'projects-webapps' : 'Webové Aplikace',
+        'projects-cprojects' : 'C Projekty',
+        'projects-project' : 'Projekt:',
+        'projects-currentwebsite' : 'Stránka, na který se aktuálně nacházite',
+        'projects-desc' : 'Popis:',
+        'projects-currWebDes' : 'Prozkoumejte zdrojový kód tohoto webu. Postaven s HTML, CSS a retro-inspirovaným designem, slouží jako životopis pro mě a mé projekty!',
+        'projects-viewOnGit' : 'Zobrazit GitHub',
+        'projects-tbdTitle' : 'Další projekty již brzy',
+        'projects-tbdDes' : 'Neustále pracuji na nových projektech a aktualizacích. Zůstaňte naladěni na další inovativní a vzrušující práci!',
+        'projects-simonProjectsTitle' : '"Simon" elektronická hra',
+        'projects-simonProjectsDes' : 'Vraťte se v čase a otestujte si svou paměť s tímto retro inspirovaným pexesem! Hra bliká sledem barevných tlačítek – každé je doprovázeno chytlavým zvukem.',
+        'projects-play' : 'Hrát',
+        'projects-tictactoedes' : 'Vstupte do přepracované klasiky, kde se Tic Tac Toe snoubí s moderní strategií! Toto není vaše typická hra s mřížkou 3×3 – zde si můžete přizpůsobit velikost desky a podmínky výhry.',
+        'projects-googlescraperdes' : 'Tento projekt je jednoduchá webová aplikace, která uživatelům umožňuje vyhledávat klíčové slovo a načítat výsledky z externího API.',
+        'projects-pexesodes' : 'Vstupte do vysoce sázkové, retro inspirované výzvy přiřazování karet, která otestuje vaši paměť a reflexy!'
     }
 
 }
