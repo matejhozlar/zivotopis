@@ -14,6 +14,8 @@ You can view my resume live at: **TBD**
 - **JavaScript**: Dynamic Interactions
 - **GSAP**: Animations and Effects
 
+## Table of Contents
+- [Installation & Usage](#-installation--usage)
 
 ## 🎨 Features
 - **Responsive design**: Fully optimized for different screen sizes.
