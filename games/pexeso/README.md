@@ -4,7 +4,7 @@ A retro-inspired memory game built with HTML, CSS, and JavaScript. Choose your d
 
 ## Table of Contents
 1. [Features](#-features)
-2. Installation and Setup
+2. [Installation and Setup](#-installation-setup)
 3. How to Play
 4. Difficulties & Board Sizes
 5. Project Structure
