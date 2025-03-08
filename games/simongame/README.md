@@ -2,11 +2,11 @@
 A modern take on the classic “Simon” electronic memory game. Watch the pattern of lights and sounds, then repeat it to advance. Each level adds a new color to the sequence, challenging your memory and reflexes in a fun, arcade-inspired style.
 
 ## Table of Contents
-1. Introduction
-2. Features
-3. How to Play
-4. Project Structure
-5. Customization
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [How to Play](#how-to-play)
+4. [Project Structure](#project-structure)
+5. [Customization](#customization)
 
 ## Introduction
 Simon is a simple yet addictive memory game. This version uses **HTML, CSS, and vanilla JavaScript** to deliver a retro vibe, complete with neon colors, glitch effects, and a playful loading screen.
