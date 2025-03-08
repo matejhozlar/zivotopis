@@ -136,14 +136,16 @@ const translations = {
 
 }
 
+let currentLanguage = localStorage.getItem("selectedLanguage") || "en";
+
 function changeLanguage(lang) {
+    currentLanguage = lang; 
     localStorage.setItem("selectedLanguage", lang);
-    applyTranslations(lang);
+    applyTranslations(currentLanguage);
 }
 
 function applyTranslations(lang) {
     if (!translations[lang]) return;
-
     document.querySelectorAll("[data-translate]").forEach(el => {
         let key = el.getAttribute("data-translate");
         if (translations[lang][key]) {
@@ -153,13 +155,12 @@ function applyTranslations(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    let savedLanguage = localStorage.getItem("selectedLanguage") || "en";
-    applyTranslations(savedLanguage);
+    applyTranslations(currentLanguage);
 
     const carousel = document.getElementById('myCarousel');
     if (carousel) {
         carousel.addEventListener('slid.bs.carousel', () => {
-            applyTranslations(savedLanguage);
+            applyTranslations(currentLanguage);
         });
     }
 });
