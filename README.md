@@ -1,3 +1,7 @@
+⚠️ Work In Progress
+
+
+
 # 🌍 Personal Portfolio | Osobné portfólio | Osobní portfolio  
 
 ---
