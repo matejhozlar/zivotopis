@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section, h2, img, p, ul");
+    const allElements = document.querySelectorAll("section, h2, img, p, ul");
+    const sections = Array.from(allElements).filter(el => !el.closest(".no-fade"));
 
     const options = {
-        root: null, // viewport
-        threshold: 0.1, // trigger when 10% of the element is visible
+        root: null, 
+        threshold: 0.1, 
         rootMargin: "0px"
     };
 
